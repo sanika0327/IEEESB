@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "use client"
 
 import { useState, useEffect } from "react"
@@ -18,10 +19,37 @@ const NavLink = ({ href, children, isScrolled, onClick }) => {
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+=======
+"use client";
+import { useState, useEffect } from "react";
+import { BsWhatsapp } from "react-icons/bs";
+
+const NavLink = ({ href, children, isScrolled }) => {
+  return (
+    <a
+      href={href}
+      className={`group relative px-4 transition-colors duration-300 ${
+        isScrolled ? "text-black" : "text-white"
+      }`}
+    >
+      {children}
+      <span
+        className={`absolute left-0 -bottom-1 w-0 h-[3px] transition-all duration-300 group-hover:w-full ${
+          isScrolled ? "bg-black" : "bg-white"
+        }`}
+      />
+    </a>
+  );
+};
+
+export default function Navbar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+>>>>>>> 0160395094f0145fa6ff2cf8da1fa7ecbd1117b2
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
+<<<<<<< HEAD
         setIsScrolled(true)
       } else {
         setIsScrolled(false)
@@ -49,6 +77,34 @@ export default function Navbar() {
 
         {/* Desktop Navigation */}
         <div className="navbar-desktop">
+=======
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <div
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+        isScrolled ? "bg-white shadow-lg" : "bg-transparent"
+      }`}
+    >
+      <div className="max-w-7xl mx-auto flex justify-between items-center py-6 px-4">
+        <a
+          href="#"
+          className={`text-2xl font-semibold transition-colors duration-300 ${
+            isScrolled ? "text-black" : "text-white"
+          }`}
+        >
+          IEEE
+        </a>
+        <div className="flex items-center gap-8 font-semibold">
+>>>>>>> 0160395094f0145fa6ff2cf8da1fa7ecbd1117b2
           <NavLink href="#overview" isScrolled={isScrolled}>
             OVERVIEW
           </NavLink>
@@ -68,6 +124,7 @@ export default function Navbar() {
             COMMITTEE
           </NavLink>
         </div>
+<<<<<<< HEAD
 
         {/* Mobile Menu Button */}
         <button
@@ -114,4 +171,9 @@ export default function Navbar() {
       </div>
     </div>
   )
+=======
+      </div>
+    </div>
+  );
+>>>>>>> 0160395094f0145fa6ff2cf8da1fa7ecbd1117b2
 }

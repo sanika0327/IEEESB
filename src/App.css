@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;600;700&display=swap");
 
 /* Reset and base styles */
@@ -1052,3 +1053,39 @@ h2 {
 .bg-opacity-50 {
   background-opacity: 0.5;
 }
+=======
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600;700&display=swap');
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600; /* Slightly lighter for better rendering */
+    letter-spacing: 1px;
+    color: #111111; /* Dark gray for contrast */
+    text-transform: uppercase;
+    display: block; /* Ensure it's not hidden */
+    visibility: visible; /* Ensure it's visible */
+}
+
+
+
+
+
+
+
+.hero-section {
+    background-image: url("/bgimg.jpg"); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+>>>>>>> 0160395094f0145fa6ff2cf8da1fa7ecbd1117b2
