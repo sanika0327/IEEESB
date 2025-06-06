@@ -285,7 +285,7 @@ export default function App() {
       <section className="hero-section">
         <div className="text-center"></div>
         <div className="flex items-center justify-center h-full text-center text-white bg-opacity-50">
-          <h1 className="hero-title">Welcome to IEEE Student Branch PES MCOE</h1>
+          <h1 className=" text-5xl font-bold drop-shadow-lg">Welcome to IEEE Student Branch PES MCOE</h1>
         </div>
       </section>
 
