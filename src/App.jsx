@@ -477,7 +477,6 @@ export default function App() {
             ))}
           </div>
 
-
           {/* Additional Members */}
           <div className="additional-members-grid">
             {additionalMembers.map((member, index) => (
