@@ -1,0 +1,449 @@
+import "./App.css"
+import Navbar from "./Navbar"
+
+export default function Home() {
+  const achievements = [
+    {
+      id: 1,
+      name: "Dr.Mrs. K. R.Joshi",
+      designation: "Principal",
+      achievements: [
+        "Chair, IEEE Signal Processing Society Chapter-Pune Section",
+        "Felicitated on Occasion of World Telecommunication Day organized by IEEE WIE, IEEE Communication Society and Institution of Engineers (India), Pune Center in May 2012.",
+        
+      ],
+      image:
+        "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=256&q=80",
+    },
+    {
+      id: 2,
+      name: "	Dr.Mrs.  R. S.Kamathe",
+      designation: "HOD,E&TC	",
+      achievements: [
+        "Chair, IEEE Signal Processing Society Chapter, Pune Section for the year 2017, 2018.",
+        "Chair, IEEE-WIE (Women in Engineering) Affinity Group, Pune Section for the year 2013.",
+        "Secretary, IEEE- SP (Signal Processing) Society Chapter, Pune Section for the years 2013-2016.",
+        "IEEE Student Branch Counselor, PES’s Modern College of Engineering for 2008-2017.",
+        "IEEE Student Branch Chair, PES’s Modern College of Engineering from 2008.",
+        "IEEE Student Branch Mentor, PES’s Modern College of Engineering since 2003 to 2007.",
+      ],
+      image:
+        "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=256&q=80",
+    },
+    {
+      id: 3,
+      name: "Ms. Sneha Shrikumar",
+      designation: "Student Member",
+      achievements: [
+        "Section Student Representative (SSR) IEEE Pune Section in year 2017",
+        "Student Chair for IEEE Student Branch, PES’s Modern College of Engineering from 2008.",
+      
+      ],
+      image:
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=256&q=80",
+    },
+    {
+      id: 4,
+      name: "	Mr. Shubhankar Niphadkar",
+      designation: "Student Member",
+      achievements: [
+        "Section Student Representative (SSR) IEEE Pune Section in year 2019",
+        "Student Chair for IEEE Student Branch, PES’s Modern College of Engineering in year 2019.",
+  
+      ],
+      image:
+        "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=256&q=80",
+    },
+    {
+      id: 5,
+      name: "Ms. Gauri Warkhade",
+      designation: "Student Member",
+      achievements: [
+        "Xtreme Ambassador of IEEE Pune Section in year 2019",
+        
+      ],
+      image:
+        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=256&q=80",
+    },
+    {
+      id: 6,
+      name: "Mr. Shreyas Joshi",
+      designation: "Student Member",
+      achievements: [
+        "Student Chair for IEEE Student Branch, PES’s Modern College of Engineering in year 2020.",
+        
+      ],
+      image:
+        "https://images.unsplash.com/photo-1619895862022-09114b41f16f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=256&q=80",
+    },
+    {
+      id: 7,
+      name: "Mr. Bhavesh Kothari",
+      designation: "Student",
+      achievements: [
+        "Student Chair for IEEE Student Branch, PES’s Modern College of Engineering in year 2021.",
+        
+      ],
+      image:
+        "https://images.unsplash.com/photo-1619895862022-09114b41f16f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=256&q=80",
+    },
+    {
+      id: 8,
+      name: "Mr. Vineet Patil",
+      designation: "Student Mmeber",
+      achievements: [
+        "Student Vice Chair for IEEE Student Branch, PES’s Modern College of Engineering in year 2023 -24 .",
+        
+      ],
+      image:
+        "https://images.unsplash.com/photo-1619895862022-09114b41f16f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=256&q=80",
+    },
+    
+  ]
+
+  return (
+    <main className="min-h-screen">
+      <Navbar />
+      {/* Hero Section */}
+      <section className="h-screen bg-gray-100 flex items-center justify-center">
+        <div className="text-center"></div>
+      </section>
+
+      {/* Overview */}
+      <section id="overview" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-4xl font-bold mb-8">Overview</h2>
+          <div className="grid grid-cols-2 gap-12">
+            <div className="space-y-4">
+              <p className="text-gray-600">
+                Experience luxury and comfort at KingSukh. Our premium accommodations and exceptional service ensure an
+                unforgettable stay for all our guests.
+              </p>
+              <p className="text-gray-600">
+                Located in the heart of the city, we offer easy access to major attractions while providing a peaceful
+                retreat from urban life.
+              </p>
+            </div>
+            <div className="bg-gray-200 rounded-lg h-[400px]" />
+          </div>
+        </div>
+      </section>
+
+      {/* Upcomming Events */}
+      <section id="upcomingevents" className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-4xl font-bold mb-12">Upcoming Events</h2>
+          <div className="grid grid-cols-3 gap-8">
+            {["Room Service", "Spa & Wellness", "Fine Dining"].map((service) => (
+              <div key={service} className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-semibold mb-4">{service}</h3>
+                <p className="text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Past Events */}
+{/* Past Events */}
+<section id="pastevents" className="py-20 bg-gray-50">
+  <div className="max-w-7xl mx-auto px-6">
+    <h2 className="text-4xl font-bold text-gray-900 text-center mb-8">Past Events</h2>
+
+    {/* Scrollable Frame */}
+    <div className="border-4 border-gray-300 rounded-xl p-4 shadow-lg bg-white h-[400px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200">
+      <div className="space-y-6 p-2">
+        {[
+          {
+            title: "7 days ESP32 Workshop",
+            description: "Space for Description",
+            image: "Imageurl",
+          },
+          {
+            title: "Electro Saga",
+            description: "Space for Description",
+            image: "Imageurl",
+          },
+          {
+            title: "Power BI Workshop",
+            description: "Space for Description",
+            image: "Imageurl",
+          },
+        ].map((event, index) => (
+          <div key={index} className="flex bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-transform duration-300">
+            <img src={event.image} alt={event.title} className="w-40 h-40 object-cover" />
+            <div className="p-4">
+              <h3 className="text-lg font-semibold text-gray-800">{event.title}</h3>
+              <p className="text-gray-600 mt-2">{event.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+      {/* Achievements */}
+      <section id="achievements" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-4xl font-semibold text-gray-800 text-center mb-8">Achievements</h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {achievements.map((person) => (
+              <div
+                key={person.id}
+                className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1"
+              >
+                <div className="flex items-center p-4 border-b border-gray-100">
+                  <div className="w-16 h-16 rounded-full overflow-hidden mr-4">
+                    <img
+                      src={person.image || "/placeholder.svg"}
+                      alt={person.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800">{person.name}</h3>
+                    <p className="text-gray-600">{person.designation}</p>
+                  </div>
+                </div>
+
+                <div className="p-5">
+                  <h4 className="text-md font-medium text-gray-700 mb-2">Notable Achievements:</h4>
+                  <ul className="space-y-2">
+                    {person.achievements.map((achievement, index) => (
+                      <li key={index} className="flex items-start">
+                        <span className="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-2"></span>
+                        <span className="text-gray-600 text-sm">{achievement}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery Section */}
+      {/* Gallery */}
+<section id="gallery" className="py-20">
+  <div className="max-w-7xl mx-auto px-6">
+    <h2 className="text-4xl font-semibold text-gray-800 text-center mb-8">Gallery</h2>
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      {[
+        { id: 1, src: "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9", alt: "Tech Event 1" },
+        { id: 2, src: "https://images.unsplash.com/photo-1518770660439-4636190af475", alt: "Workshop" },
+        { id: 3, src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDo890dsxpB5UCLQFdVBWmK4qVxTrsrLEEUg&s", alt: "Robotics Competition" },
+        { id: 4, src: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3", alt: "Hackathon" },
+        { id: 5, src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzBguBMf0ofoW2i64GkAifBNA5HwI-bvpsFA&s", alt: "AI Showcase" },
+        { id: 6, src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkJuhs3xtJ0V94n2PYF04yJ7JqFJ3Co7odWQ&s", alt: "VR Experience" },
+        
+      ].map((item) => (
+        <div key={item.id} className="relative group overflow-hidden shadow-lg">
+            <img
+              src={item.src}
+              alt={item.alt}
+              className="w-full h-48  object-cover border-3 border-transparent transition-all duration-300 hover:border-gray-700"
+            />
+          </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+      {/* Committee */}
+      <section id="committee" className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-4xl font-bold mb-12">Committee </h2>
+          <div className="grid grid-cols-4 gap-4">
+            {Array.from({ length: 8 }).map((_, i) => (
+              <div key={i} className="bg-gray-200 rounded-lg h-[200px]" />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-black text-white py-12">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid grid-cols-4 gap-8">
+            <div>
+              <h3 className="text-xl font-semibold mb-4">KingSukh</h3>
+              <p className="text-gray-400">Luxury stays & memorable experiences</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
+              <ul className="space-y-2 text-gray-400">
+                <li>
+                  <a href="#about">About</a>
+                </li>
+                <li>
+                  <a href="#services">Services</a>
+                </li>
+                <li>
+                  <a href="#rooms">Rooms</a>
+                </li>
+                <li>
+                  <a href="#gallery">Gallery</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Contact</h3>
+              <ul className="space-y-2 text-gray-400">
+                <li>123 Hotel Street</li>
+                <li>City Name, Country</li>
+                <li>+91 900 706 2180</li>
+                <li>info@kingsukh.com</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
+              <div className="flex gap-4">
+                <a href="#" className="text-gray-400 hover:text-white">
+                  Facebook
+                </a>
+                <a href="#" className="text-gray-400 hover:text-white">
+                  Instagram
+                </a>
+                <a href="#" className="text-gray-400 hover:text-white">
+                  Twitter
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
+            <p>&copy; 2024 KingSukh. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  )
+}
+
+import "./App.css";
+import Navbar from "./Navbar"
+import { useState, useEffect, useRef, useCallback } from "react"
+
+export default function Home() {
+  // State for the carousel
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isAnimating, setIsAnimating] = useState(false);
+  const carouselRef = useRef(null);
+  const [visibleCards, setVisibleCards] = useState(3);
+
+  // Sample event data
+  const events = [
+    {
+      id: 1,
+      title: "Annual Gala Dinner",
+      date: "June 15, 2024",
+      location: "Grand Ballroom",
+      time: "7:00 PM - 11:00 PM",
+      description: "Join us for an elegant evening of fine dining, live music, and networking with industry professionals.",
+      image: "/placeholder.svg?height=300&width=500",
+      category: "Gala"
+    },
+    {
+      id: 2,
+      title: "Summer Wellness Retreat",
+      date: "July 8-10, 2024",
+      location: "Spa & Wellness Center",
+      time: "9:00 AM - 5:00 PM",
+      description: "A three-day retreat focused on mindfulness, yoga, and holistic health practices led by expert practitioners.",
+      image: "/placeholder.svg?height=300&width=500",
+      category: "Wellness"
+    },
+    {
+      id: 3,
+      title: "Business Leadership Conference",
+      date: "August 22, 2024",
+      location: "Executive Conference Hall",
+      time: "10:00 AM - 4:00 PM",
+      description: "Featuring keynote speakers from Fortune 500 companies discussing innovation and leadership strategies.",
+      image: "/placeholder.svg?height=300&width=500",
+      category: "Conference"
+    },
+    {
+      id: 4,
+      title: "Wine Tasting Experience",
+      date: "September 5, 2024",
+      location: "Vineyard Terrace",
+      time: "6:00 PM - 9:00 PM",
+      description: "Sample premium wines from around the world paired with gourmet appetizers prepared by our executive chef.",
+      image: "/placeholder.svg?height=300&width=500",
+      category: "Culinary"
+    },
+    {
+      id: 5,
+      title: "Wedding Showcase",
+      date: "October 12, 2024",
+      location: "Garden Pavilion",
+      time: "11:00 AM - 3:00 PM",
+      description: "Explore our wedding venues and meet with vendors to plan your perfect day at KingSukh.",
+      image: "/placeholder.svg?height=300&width=500",
+      category: "Showcase"
+    }
+  ];
+
+  // Carousel logic
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setVisibleCards(1);
+      } else if (window.innerWidth < 1024) {
+        setVisibleCards(2);
+      } else {
+        setVisibleCards(3);
+      }
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const maxIndex = Math.max(0, events.length - visibleCards);
+
+  const scrollToIndex = (index) => {
+    if (isAnimating || !carouselRef.current) return;
+    
+    const newIndex = Math.max(0, Math.min(index, maxIndex));
+    setIsAnimating(true);
+    setCurrentIndex(newIndex);
+    
+    const cardWidth = carouselRef.current.offsetWidth / visibleCards;
+    carouselRef.current.scrollTo({
+      left: newIndex * cardWidth,
+      behavior: 'smooth'
+    });
+    
+    setTimeout(() => setIsAnimating(false), 500);
+  };
+
+  const handlePrev = () => scrollToIndex(currentIndex - 1);
+  const handleNext = () => scrollToIndex(currentIndex + 1);
+
+  const handleScrollEnd = useCallback(() => {
+    if (!carouselRef.current) return;
+    
+    const scrollPosition = carouselRef.current.scrollLeft;
+    const cardWidth = carouselRef.current.offsetWidth / visibleCards;
+    const newIndex = Math.round(scrollPosition / cardWidth);
+    
+    if (newIndex !== currentIndex) {
+      setCurrentIndex(newIndex);
+    }
+  }, [currentIndex, visibleCards]);
+
+  useEffect(() => {
+    const carousel = carouselRef.current;
+    if (carousel) {
+      carousel.addEventListener('scrollend', handleScrollEnd);
+      return () => carousel.removeEventListener('scrollend', handleScrollEnd);
+    }
+  }, [handleScrollEnd]);
