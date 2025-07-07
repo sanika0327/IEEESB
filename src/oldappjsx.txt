@@ -228,16 +228,16 @@ export default function App() {
       name: "Dr.Mrs. R. S.Kamathe",
       position: "Vice Principal, Branch Counselor",
       photo: "https://i.imgur.com/VbTMxKr.jpeg",
-      linkedin: "",
-      email: "hodentc@modencoe.edu.in",
+      linkedin: "https://www.linkedin.com/in/dr-k-r-joshi",
+      email: "principal@moderncoe.edu.in",
     },
-    {
+      {
       id: 2,
       name: "Mrs. Snehal Hon",
       position: "Faculty Coordinator",
       photo: "https://i.postimg.cc/jqfLXDY0/snehahhon-Image2025-06-12-at-17-35-55-6e276fa9.jpg",
-      linkedin: "https://www.linkedin.com/in/snehal-hon-29322855/",
-      email: "snehal.hon@moderncoe.edu.in",
+      linkedin: "https://www.linkedin.com/in/dr-r-s-kamathe",
+      email: "hod.etc@moderncoe.edu.in",
     },
     {
       id: 3,
@@ -245,7 +245,7 @@ export default function App() {
       position: "Chair of IEEE PESMCOE, Co-SSR",
       photo: "https://i.imgur.com/LgD7QkQ.jpeg",
       linkedin: "https://www.linkedin.com/in/anish-walke1709?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      email: "walkeanish@gmail.com",
+      email: "hod.etc@moderncoe.edu.in",
     },
     {
       id: 4,
@@ -253,9 +253,16 @@ export default function App() {
       position: "Vice-Chair-Person",
       photo: "https://i.imgur.com/Ns8PIJF.jpeg",
       linkedin: "https://www.linkedin.com/in/rushabh-bhalgat?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      email: "rushabh@ieee.org",
+      email: "sneha.shrikumar@moderncoe.edu.in",
     },
-
+    {
+      id: 5,
+      name: "Mrs. Aditi Bansude",
+      position: "WiE Chair-Person",
+      photo: "https://i.imgur.com/B1G33JA.jpeg",
+      linkedin: "https://www.linkedin.com/in/aditi-bansude-71983b29a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      email: "shubhankar.niphadkar@moderncoe.edu.in",
+    },
   ]
 
   const additionalMembers = [
@@ -493,10 +500,10 @@ export default function App() {
       <footer className="footer">
         <div className="footer-container">
           <div className="footer-grid">
-            <div>
-              <img src="/transieeelogo.png" alt="IEEE Logo" className="footer-logo" />
-              <p className="footer-text"></p>
-            </div>
+          <div>
+  <img src="/transieeelogo.png" alt="IEEE Logo" className="footer-logo" />
+  <p className="footer-text"></p>
+</div>
 
             <div>
               <h3 className="footer-title">Quick Links</h3>

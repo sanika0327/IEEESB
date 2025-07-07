@@ -55,7 +55,6 @@ h2 {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 1rem;
-  justify-content: space-between;
 }
 
 .navbar-logo {
@@ -77,10 +76,9 @@ h2 {
 
 .navbar-desktop {
   display: none;
-  align-items: flex-end;
+  align-items: center;
   gap: 2rem;
   font-weight: 600;
-  margin-left: auto;
 }
 
 @media (min-width: 1024px) {
@@ -928,6 +926,13 @@ h2 {
   grid-template-columns: 1fr;
   gap: 2rem;
 }
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  align-items: start; /* Ensures top alignment */
+}
+
 
 @media (min-width: 640px) {
   .footer-grid {
@@ -1053,4 +1058,13 @@ h2 {
 
 .bg-opacity-50 {
   background-opacity: 0.5;
+
 }
+.footer-logo {
+  width: 160px;   /* You can increase this to 180px, 200px, etc. */
+  height: auto;
+  display: block;
+  margin-bottom: 0.5rem;
+  object-fit: contain;
+}
+

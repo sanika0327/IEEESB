@@ -228,16 +228,16 @@ export default function App() {
       name: "Dr.Mrs. R. S.Kamathe",
       position: "Vice Principal, Branch Counselor",
       photo: "https://i.imgur.com/VbTMxKr.jpeg",
-      linkedin: "",
-      email: "hodentc@modencoe.edu.in",
+      linkedin: "https://www.linkedin.com/in/dr-k-r-joshi",
+      email: "principal@moderncoe.edu.in",
     },
-    {
+      {
       id: 2,
       name: "Mrs. Snehal Hon",
       position: "Faculty Coordinator",
       photo: "https://i.postimg.cc/jqfLXDY0/snehahhon-Image2025-06-12-at-17-35-55-6e276fa9.jpg",
-      linkedin: "https://www.linkedin.com/in/snehal-hon-29322855/",
-      email: "snehal.hon@moderncoe.edu.in",
+      linkedin: "https://www.linkedin.com/in/dr-r-s-kamathe",
+      email: "hod.etc@moderncoe.edu.in",
     },
     {
       id: 3,
@@ -245,7 +245,7 @@ export default function App() {
       position: "Chair of IEEE PESMCOE, Co-SSR",
       photo: "https://i.imgur.com/LgD7QkQ.jpeg",
       linkedin: "https://www.linkedin.com/in/anish-walke1709?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      email: "walkeanish@gmail.com",
+      email: "hod.etc@moderncoe.edu.in",
     },
     {
       id: 4,
@@ -253,9 +253,16 @@ export default function App() {
       position: "Vice-Chair-Person",
       photo: "https://i.imgur.com/Ns8PIJF.jpeg",
       linkedin: "https://www.linkedin.com/in/rushabh-bhalgat?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      email: "rushabh@ieee.org",
+      email: "sneha.shrikumar@moderncoe.edu.in",
     },
-
+    {
+      id: 5,
+      name: "Mrs. Aditi Bansude",
+      position: "WiE Chair-Person",
+      photo: "https://i.imgur.com/B1G33JA.jpeg",
+      linkedin: "https://www.linkedin.com/in/aditi-bansude-71983b29a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      email: "shubhankar.niphadkar@moderncoe.edu.in",
+    },
   ]
 
   const additionalMembers = [
@@ -452,30 +459,64 @@ export default function App() {
           <h2 className="section-title">Committee</h2>
 
           {/* Important Members */}
-          <div className="important-members-grid">
-            {importantMembers.map((member) => (
-              <div
-                key={member.id}
-                className="member-card"
-                onMouseEnter={() => setHoveredMember(member.id)}
-                onMouseLeave={() => setHoveredMember(null)}
-              >
-                <img src={member.photo || "/placeholder.svg"} alt={member.name} className="member-image" />
-                <div className="member-overlay">
-                  <h3 className="member-name">{member.name}</h3>
-                  <p className="member-position">{member.position}</p>
-                  <div className="member-links">
-                    <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="member-link">
-                      <FaLinkedin size={20} />
-                    </a>
-                    <a href={`mailto:${member.email}`} className="member-link">
-                      <FaEnvelope size={20} />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            ))}
+      <div className="important-members-grid">
+  {/* First row: IDs 1 & 2 */}
+  <div style={{ display: "flex", justifyContent: "center", gap: "2rem", marginBottom: "1.5rem" }}>
+    {importantMembers
+      .filter(member => member.id === 1 || member.id === 2)
+      .map(member => (
+        <div
+          key={member.id}
+          className="member-card"
+          onMouseEnter={() => setHoveredMember(member.id)}
+          onMouseLeave={() => setHoveredMember(null)}
+        >
+          <img src={member.photo || "/placeholder.svg"} alt={member.name} className="member-image" />
+          <div className="member-overlay">
+            <h3 className="member-name">{member.name}</h3>
+            <p className="member-position">{member.position}</p>
+            <div className="member-links">
+              <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="member-link">
+                <FaLinkedin size={20} />
+              </a>
+              <a href={`mailto:${member.email}`} className="member-link">
+                <FaEnvelope size={20} />
+              </a>
+            </div>
           </div>
+        </div>
+      ))}
+  </div>
+
+  {/* Second row: IDs 3, 4 & 5 */}
+  <div style={{ display: "flex", justifyContent: "center", gap: "2rem" }}>
+    {importantMembers
+      .filter(member => member.id === 3 || member.id === 4 || member.id === 5)
+      .map(member => (
+        <div
+          key={member.id}
+          className="member-card"
+          onMouseEnter={() => setHoveredMember(member.id)}
+          onMouseLeave={() => setHoveredMember(null)}
+        >
+          <img src={member.photo || "/placeholder.svg"} alt={member.name} className="member-image" />
+          <div className="member-overlay">
+            <h3 className="member-name">{member.name}</h3>
+            <p className="member-position">{member.position}</p>
+            <div className="member-links">
+              <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="member-link">
+                <FaLinkedin size={20} />
+              </a>
+              <a href={`mailto:${member.email}`} className="member-link">
+                <FaEnvelope size={20} />
+              </a>
+            </div>
+          </div>
+        </div>
+      ))}
+  </div>
+</div>
+
 
           {/* Additional Members */}
           <div className="additional-members-grid">
@@ -493,10 +534,10 @@ export default function App() {
       <footer className="footer">
         <div className="footer-container">
           <div className="footer-grid">
-            <div>
-              <img src="/transieeelogo.png" alt="IEEE Logo" className="footer-logo" />
-              <p className="footer-text"></p>
-            </div>
+          <div>
+  <img src="/transieeelogo.png" alt="IEEE Logo" className="footer-logo" />
+  <p className="footer-text"></p>
+</div>
 
             <div>
               <h3 className="footer-title">Quick Links</h3>
