@@ -231,7 +231,7 @@ export default function App() {
       linkedin: "",
       email: "hodentc@modencoe.edu.in",
     },
-      {
+    {
       id: 2,
       name: "Mrs. Snehal Hon",
       position: "Faculty Coordinator",
@@ -255,7 +255,7 @@ export default function App() {
       linkedin: "https://www.linkedin.com/in/rushabh-bhalgat?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       email: "rushabh@ieee.org",
     },
-    
+
   ]
 
   const additionalMembers = [
@@ -451,7 +451,7 @@ export default function App() {
         <div className="committee-container">
           <h2 className="section-title">Committee</h2>
 
-     {/* Important Members */}
+          {/* Important Members */}
           <div className="important-members-grid">
             {importantMembers.map((member) => (
               <div
@@ -494,10 +494,10 @@ export default function App() {
       <footer className="footer">
         <div className="footer-container">
           <div className="footer-grid">
-          <div>
-  <img src="/transieeelogo.png" alt="IEEE Logo" className="footer-logo" />
-  <p className="footer-text"></p>
-</div>
+            <div>
+              <img src="/transieeelogo.png" alt="IEEE Logo" className="footer-logo" />
+              <p className="footer-text"></p>
+            </div>
 
             <div>
               <h3 className="footer-title">Quick Links</h3>
