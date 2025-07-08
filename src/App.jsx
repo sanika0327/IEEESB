@@ -267,6 +267,7 @@ export default function App() {
     { name: "Soham Sarde", position: "Management Team" },
     { name: "Sakshi Shinde", position: "Management Team" },
     { name: "Shreyas Gourkar", position: "Management Team" },
+    { name: "Krishna khubchandani", position: "Management Team" },
     { name: "Varad Burhade", position: "Publicity & Design Team (head)" },
     { name: "Sinjini Budhkar", position: "Publicity & Design Team (head)" },
     { name: "Gayatri Jaydeokar", position: "Publicity & Design Team" },
@@ -301,8 +302,8 @@ export default function App() {
           <div className="overview-grid">
             <div className="overview-text">
               <p className="overview-paragraph">
-                Welcome to the official website of the IEEE Power & Energy Society (PES) Student Branch at Modern
-                College of Engineering (MCOE), Pune! Since its establishment in 2003, our branch (STB62911) has been a
+                Welcome to the official website of the IEEE Student Branch at Progressive Modern
+                College of Engineering (PESMCOE), Pune! Since its establishment in 2003, our branch (STB62911) has been a
                 vibrant hub for all aspiring innovators at MCOE. We believe in fostering a dynamic learning environment
                 where students from all disciplines can actively participate in a diverse range of technical and social
                 activities, including organizing engaging competitions, insightful seminars, and hands-on workshops.
