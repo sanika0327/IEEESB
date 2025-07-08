@@ -267,7 +267,7 @@ export default function App() {
     { name: "Soham Sarde", position: "Management Team" },
     { name: "Sakshi Shinde", position: "Management Team" },
     { name: "Shreyas Gourkar", position: "Management Team" },
-    { name: "Krishna khubchandani", position: "Management Team" },
+    { name: "Krishna Khubchandani", position: "Management Team" },
     { name: "Varad Burhade", position: "Publicity & Design Team (head)" },
     { name: "Sinjini Budhkar", position: "Publicity & Design Team (head)" },
     { name: "Gayatri Jaydeokar", position: "Publicity & Design Team" },
