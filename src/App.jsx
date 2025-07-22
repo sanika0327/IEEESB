@@ -191,7 +191,7 @@ export default function App() {
         "Student Chair for IEEE Student Branch, PES's Modern College of Engineering in year 2019.",
       ],
       image:
-        "https://i.postimg.cc/0QV4Lkwp/Picsart-25-06-12-18-15-53-745.png",
+        "https://i.postimg.cc/ZnX8JCBB/shubhankar-img.jpg",
     },
     {
       id: 7,
@@ -302,7 +302,7 @@ export default function App() {
           <div className="overview-grid">
             <div className="overview-text">
               <p className="overview-paragraph">
-                Welcome to the official website of the IEEE Student Branch at Progressive Modern
+                Welcome to the official website of the IEEE Student Branch at Progressive Education Society's Modern
                 College of Engineering (PESMCOE), Pune! Since its establishment in 2003, our branch (STB62911) has been a
                 vibrant hub for all aspiring innovators at MCOE. We believe in fostering a dynamic learning environment
                 where students from all disciplines can actively participate in a diverse range of technical and social

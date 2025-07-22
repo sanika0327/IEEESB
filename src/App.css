@@ -77,10 +77,10 @@ h2 {
 
 .navbar-desktop {
   display: none;
-  align-items: flex-end;
-  gap: 2rem;
+  align-items: flex-center;
+  gap: 3rem;
   font-weight: 600;
-  margin-left: auto;
+  margin-left: 6rem;
 }
 
 @media (min-width: 1024px) {
