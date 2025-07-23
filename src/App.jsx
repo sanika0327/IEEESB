@@ -145,7 +145,7 @@ export default function App() {
     {
       id: 2,
       name: "Dr.Mrs. R. S.Kamathe",
-      designation: "HOD,E&TC",
+      designation: "Vice Principal , HOD E&TC",
       achievements: [
         "Chair, IEEE Signal Processing Society Chapter, Pune Section for the year 2017, 2018.",
         "Chair, IEEE-WIE (Women in Engineering) Affinity Group, Pune Section for the year 2013.",
@@ -260,13 +260,13 @@ export default function App() {
 
   const additionalMembers = [
     { name: "Aditi Bansude", position: "WiE Chair-Person" },
-    { name: "Adish Gujrathi", position: "Secretary" },
+    { name: "Adish Gujarathi", position: "Secretary" },
     { name: "Shreyas Kumbhar", position: "Joint Secretary" },
     { name: "Devyani Chakre", position: "Treasurer" },
     { name: "Ranjeet Wadkar", position: "Management Team (Head)" },
-    { name: "Soham Sarde", position: "Management Team" },
+    { name: "Soham Sarade", position: "Management Team" },
     { name: "Sakshi Shinde", position: "Management Team" },
-    { name: "Shreyas Gourkar", position: "Management Team" },
+    { name: "Shreyash Gourkar", position: "Management Team" },
     { name: "Krishna Khubchandani", position: "Management Team" },
     { name: "Varad Burhade", position: "Publicity & Design Team (head)" },
     { name: "Sinjini Budhkar", position: "Publicity & Design Team (head)" },
@@ -537,10 +537,17 @@ export default function App() {
             <div>
               <h3 className="footer-title">Contact</h3>
               <ul className="footer-contact">
+                <li className="text">For Membership Enquiry contact-:</li>
                 <li className="contact-name">Anish Walke (Chair)</li>
                 <li className="contact-number">Contact Number: 8767469071</li>
                 <li className="contact-name">Rushabh Bhalgat (Vice-Chair)</li>
                 <li className="contact-number">Contact Number: 7420061651</li>
+                <li className="contact-name">Pallavi Sable (Membership Head)</li>
+                <li className="contact-number">Contact Number: 8956082528</li>
+                 <li className="text">Click below for details-:</li>
+                <a href="https://drive.google.com/file/d/13f3d8-60tVajOpk46YVBdC-295Ffcrn1/view?usp=drivesdk" className="contact-name">
+                  Drive
+                </a>
               </ul>
             </div>
             <div>
