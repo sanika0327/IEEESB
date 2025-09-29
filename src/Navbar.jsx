@@ -96,7 +96,7 @@ export default function Navbar() {
       <div
         className={`mobile-menu ${isMobileMenuOpen ? "mobile-menu-open" : "mobile-menu-closed"} ${isScrolled ? "mobile-menu-scrolled" : "mobile-menu-transparent"}`}
       >
-        <div className="mobile-menu-content">
+        <div className="mobile-menu-content ">
           <NavLink href="#overview" isScrolled={isScrolled} onClick={closeMobileMenu}>
             OVERVIEW
           </NavLink>

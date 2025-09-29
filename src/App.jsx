@@ -341,12 +341,58 @@ export default function App() {
       </section>
 
       {/* Upcoming Events */}
-      <section id="upcomingevents" className="events-section">
-        <div className="events-container">
-          <h2 className="section-title text-center ">Upcoming Events</h2>
-          <div className="stay-tuned">Stay Tuned for Updates!</div>
-        </div>
-      </section>
+
+<section id="upcomingevents" className="events-section py-20">
+  <div className="events-container max-w-7xl mx-auto px-4">
+    <h2 className="section-title text-center text-3xl font-bold mb-8">
+      Upcoming Events
+    </h2>
+
+    {/* Carousel wrapper */}
+    <div className="relative">
+      {/* Scrollable container */}
+      <div
+        ref={carouselRef}
+        className="flex overflow-x-auto gap-10 scroll-smooth no-scrollbar"
+        style={{ scrollBehavior: "smooth" }}
+      >
+        {events.map((event) => (
+          <div
+            key={event.id}
+            className="min-w-[300px] max-w-sm flex-shrink-0 bg-white shadow-lg rounded-md border border-gray-200"
+          >
+            <img
+              src={event.image}
+              alt={event.title}
+              className="w-full h-48 object-cover rounded-t-xl "
+            />
+            <div className="p-20">
+              <h3 className="text-xl font-semibold">{event.title}</h3>
+              <p className="text-gray-500 text-sm">{event.date} • {event.time}</p>
+              <p className="text-gray-600 mt-2">{event.location}</p>
+              <p className="text-gray-700 mt-3 text-sm">{event.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Prev / Next buttons */}
+      <button
+        onClick={handlePrev}
+        className="absolute top-1/2 -left-6 transform -translate-y-1/2 bg-amber-500 text-white p-2 rounded-full shadow-md"
+      >
+        ◀
+      </button>
+      <button
+        onClick={handleNext}
+        className="absolute top-1/2 -right-6 transform -translate-y-1/2 bg-amber-500 text-white p-2 rounded-full shadow-md"
+      >
+        ▶
+      </button>
+    </div>
+  </div>
+</section>
+
 
       {/* Past Events */}
       <section id="pastevents" className="events-section">
@@ -359,18 +405,28 @@ export default function App() {
               {[
                 {
                   title: "7 days ESP32 Workshop",
-                  description: "Space for Description",
+                  description: "A 7-day hands-on workshop on ESP32 and sensor interfacing was conducted by IEEE PES MCOE SB in collboration with TEESA from 19th–26th August 2024, engaging 70+ E&TC and ECE students in IoT applications, Embedded C, Bluetooth, and WiFi programming.",
                   image: "img6.jpg",
                 },
                 {
                   title: "Electro Saga",
-                  description: "Space for Description",
+                  description: "The Electro Saga Workshop was held on 3rd August 2024 by IEEE PES MCOE SB in collaboration with ED Cell and IIC, where 45+ school students (9th–12th) gained hands-on experience with Arduino microcontroller, sensor interfacing, and basics of Embedded C.",
                   image: "img10.jpg",
                 },
                 {
                   title: "Power BI Workshop",
-                  description: "Space for Description",
+                  description: "The Microsoft Power BI Workshop was conducted from 30th September to 1st October 2024 by IEEE PES MCOE SB and Microsoft Student Ambassadors, where 50+ students gained hands-on experience in data visualization, dashboard creation, and career opportunities in data.",
                   image: "img3.jpg",
+                },
+                {
+                  title: "IEEE Membership Drive 2025",
+                  description: "The IEEE Membership Drive 2025 was held on 26th March 2025 by IEEE PES MCOE SB, engaging 80+ students across branches with insights into IEEE benefits, resources, and alumni success stories, leading to 10 on-spot memberships and inspiring active participation in the global technical community.",
+                  image: "img11.jpg",
+                },
+                {
+                  title: "Git it Together – Hands-on Git & GitHub Workshop",
+                  description: "The “Git it Together” Workshop was held on 25th July 2025 by IEEE PES MCOE SB, where 100+ students gained hands-on experience with Git & GitHub, learning repositories, commits, branches, pull requests, and collaborative workflows, making version control accessible and beginner-friendly.",
+                  image: "img12.jpg",
                 },
               ].map((event, index) => (
                 <div key={index} className="past-event-card">
@@ -438,6 +494,15 @@ export default function App() {
               { id: 8, src: "img8.jpg", alt: "Workshop" },
               { id: 9, src: "img9.jpg", alt: "Workshop" },
               { id: 10, src: "img10.jpg", alt: "Workshop" },
+               { id: 11, src: "img13.jpg", alt: "github Workshop" },
+              { id: 12, src: "img14.jpg", alt: "github Workshop" },
+              { id: 13, src: "img15.jpg", alt: "github Workshop" },
+              { id: 14, src: "img16.jpg", alt: "membership drive" },
+               { id: 15, src: "img17.jpg", alt: "membership drive" },
+              { id: 16, src: "img19.jpg", alt: "membership drive" },
+              { id: 17, src: "img20.jpg", alt: "membership drive" },
+              { id: 18, src: "img21.jpg", alt: "membership drive" },
+             
             ].map((item) => (
               <div key={item.id} className="gallery-item">
                 <img src={item.src || "/placeholder.svg"} alt={item.alt} className="gallery-image" />
