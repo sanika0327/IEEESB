@@ -18,14 +18,14 @@ export default function App() {
   const events = [
     {
       id: 1,
-      title: "EVENT 1",
-      date: "June 15, 2024",
-      location: "Grand Ballroom",
-      time: "7:00 PM - 11:00 PM",
+      title: "Innovatex",
+      date: "Date: 6th-7th October 2025",
+      location: "Location: To be declared soon",
+      time: "Timings: To be declared soon!",
       description:
-        "Join us for an elegant evening of fine dining, live music, and networking with industry professionals.",
+        "A 2-day Figma workshop and overnight hackathon with exciting rewards and IEEE membership offers. Design Smarter, Not Harder!",
       image: "/event1.png?height=300&width=500",
-      category: "Gala",
+      category: "UI/UX Workshop and Hackathon",
     },
     // {
     //   id: 2,
@@ -375,7 +375,7 @@ export default function App() {
               {events.map((event) => (
                 <div
                   key={event.id}
-                  className="min-w-[250px] max-w-[340px] flex-shrink-0 bg-white shadow-lg rounded-md border border-gray-200"
+                  className="min-w-[250px] max-w-[340px] flex-shrink-0 bg-white shadow-lg rounded-md border border-gray-200 hover:shadow-2xl transform hover:scale-101 transition duration-300 ease-in-out"
                 >
                   <img
                     src={event.image}
@@ -383,12 +383,11 @@ export default function App() {
                     className="w-full h-48 object-cover rounded-t-xl "
                   />
                   <div className="p-5 py-6">
-                    <h3 className="text-xl font-semibold">{event.title}</h3>
-                    <p className="text-gray-500 text-sm">
-                      {event.date} • {event.time}
-                    </p>
-                    <p className="text-gray-600 mt-2">{event.location}</p>
-                    <p className="text-gray-700 mt-3 text-sm">
+                    <h3 className="text-xl font-bold">{event.title}</h3>
+                    <p className="text-gray-500 text-sm mt-2">{event.date} </p>
+                    <p className="text-gray-500 text-sm">{event.time} </p>
+                    <p className="text-gray-600 ">{event.location}</p>
+                    <p className="text-gray-700 mt-2 text-md">
                       {event.description}
                     </p>
                   </div>
