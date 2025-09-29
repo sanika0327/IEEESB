@@ -42,8 +42,8 @@ export default function Navbar() {
 
   return (
     <div className={`navbar ${isScrolled ? "navbar-scrolled" : "navbar-transparent"}`}>
-      <div className="w-full mx-auto flex items-center py-20 px-3">
-        <a href="#" className="relative h-24 w-48 overflow-visible flex items-center mr-8">
+      <div className="w-full mx-auto flex items-center gap-32 sm:gap-0 py-">
+        <a href="#" className="relative h-24 w-48 overflow-visible flex items-center ">
           <img
             src="/transieeelogo.png"
             alt="IEEE Logo"
